@@ -5,14 +5,14 @@ using namespace std;
 
 
 int main() {
-	ModernLinkedList ps;
+    ModernLinkedList ps;
 
-	ps.PushFront(1);
-	ps.PushFront(2);
-	ps.PushFront(3);
-	ps.PushFront(4);
-	ps.PushFront(5);
-/*
+    ps.PushFront(1);
+    ps.PushFront(2);
+    ps.PushFront(3);
+    ps.PushFront(4);
+    ps.PushFront(5);
+
 	ps.PrintList();
 	ps.PushBack(8);
 
@@ -29,18 +29,23 @@ int main() {
 
 	cout << endl;
 
-	//ps.Insert(3,7);
+	cout << "inserting " << endl;
+    ps.Insert(3,7);
 	ps.PrintList();
 
-	ps.RemoveAt(3);
+	cout << "removing at: 1" << endl;
+	ps.RemoveAt(1);
+
+    ps.PrintList();
+
+
+	cout << "position 2: " << ps[2] << endl;
 	ps.PrintList();
 
-	ps.Clear();
-	ps.PrintList();
-
-	cout << "position " << ps[2] << endl;
-	ps.PrintList();
+	cout << "Clearing list..." << endl;
+    ps.Clear();
+    ps.PrintList();
 
 
-	return 0;*/
+	return 0;
 }
